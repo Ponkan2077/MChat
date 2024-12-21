@@ -112,19 +112,15 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
-       'connections' => [
-    'mongodb' => [
+       'mongodb' => [
         'driver'   => 'mongodb',
-        'host'     => env('DB_HOST'),
+        'dsn'      => env('MONGO_DB_URI'),
         'database' => env('DB_DATABASE'),
-        'username' => env('DB_USERNAME'),
-        'password' => env('DB_PASSWORD'),
         'options'  => [
-            'database' => env('DB_AUTH_DATABASE', 'admin') // set the authentication database
-        ]
+            'retryWrites' => true,
+            'w'           => 'majority',
+        ],
     ],
-],
-
     ],
 
     /*
