@@ -1,0 +1,2 @@
+[05-Dec-2024 07:49:23 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'mongodb' (tried: ext\mongodb (The specified module could not be found), ext\php_mongodb.dll (The specified procedure could not be found)) in Unknown on line 0
+[05-Dec-2024 07:49:39 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'mongodb' (tried: ext\mongodb (The specified module could not be found), ext\php_mongodb.dll (The specified procedure could not be found)) in Unknown on line 0
